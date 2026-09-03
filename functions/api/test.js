@@ -1,3 +1,5 @@
-export function onRequest() {
-  return new Response("Duck Hunt API fungerar!");
-}
+export default {
+  async fetch() {
+    return new Response("Duck Hunt API fungerar!");
+  }
+};
