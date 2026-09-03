@@ -1,0 +1,26 @@
+{
+  "$schema": "https://json.schemastore.org/wrangler.json",
+  "name": "duckhunt",
+  "main": "functions/api/test.js",
+  "compatibility_date": "2026-09-03",
+
+  "assets": {
+    "directory": ".",
+    "run_worker_first": ["/api/*"]
+  },
+
+  "d1_databases": [
+    {
+      "binding": "DB",
+      "database_name": "duck-hunt-db",
+      "database_id": "7f03d653-b9de-4c74-aa24-f4f3e12ce9dc"
+    }
+  ],
+
+  "r2_buckets": [
+    {
+      "binding": "IMAGES",
+      "bucket_name": "duck-hunt-images"
+    }
+  ]
+}
